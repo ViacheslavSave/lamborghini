@@ -14,8 +14,13 @@ a {
   color: inherit;
   text-decoration: none;
 }
-.container {
+.big-container {
   max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.container {
+  max-width: 925px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -35,7 +40,6 @@ body {
   background: linear-gradient(180deg, #D8D4CA 0%, rgba(217, 217, 217, 0) 100%);
   z-index: 1;
 }
-.container {}
 .nav {
   display: flex;
   justify-content: space-between;
@@ -57,7 +61,6 @@ body {
 .menu-right {}
 //?--------------------------------------------- header -- media ------------------------------------------------
 .header {}
-.container {}
 .nav {}
 .menu-list {}
 .menu-left {}
@@ -132,3 +135,90 @@ body {
   &__text {}
 }
 //?--------------------------------------------- promo -- end --------------------------------------------------
+//!----- info -----
+//?--------------------------------------------- info ---------------------------------------------------------
+.info {padding-bottom: 120px;
+  &__part {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    font-weight: 300;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  &__part-textbox {
+    display: flex;
+    gap: 0 20px;
+    justify-content: space-between;
+    // margin-bottom: 30px;
+    b {
+      font-weight: 700;
+    }
+  }
+  &__text {
+    margin-bottom: 30px;
+    flex-basis: 440px;
+    // width: 50%;
+  }
+  &__part-img {
+    // width: 100%;
+    object-fit: cover;
+    // text-align: center;
+  }
+  &__content {
+    flex-basis: 415px;
+  }
+  &__part--third &__text {
+    max-width: 377px;
+  }
+  &__part--third {
+    padding-top: 65px;
+  }
+  &__part--second &__text {
+    max-width: 352px;
+  }
+  &__part--second &__text:last-child {
+    margin-bottom: 0px;
+  }
+  &__part--first {
+    display: block;
+  }
+  &__table {
+    flex-basis: 450px;
+    // position: relative;
+    // top: 20px;
+    border-top: 1px solid #040404;
+    border-bottom: 1px solid #040404;
+    // &::before {
+    //   content: '';
+    //   position: absolute;
+    //   top: -20px;
+    //   left: 0;
+    //   width: 100%;
+    //   border-top: 1px solid #040404;
+    // }
+    td {
+      padding-bottom: 20px;
+    }
+    tr:first-child{
+      td{
+        padding-top: 20px;
+      }
+    }
+   
+  }
+}
+//?--------------------------------------------- info -- media ------------------------------------------------
+.info {
+  &__part {}
+  &__title {}
+  &__part-textbox {}
+  &__text {}
+  &__part-img {}
+  &__content {}
+  &__table {}
+}
+//?--------------------------------------------- info -- end --------------------------------------------------
