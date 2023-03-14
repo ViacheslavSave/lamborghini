@@ -113,7 +113,7 @@ body {
 }
 
 .info {
-  padding-bottom: 120px;
+  padding-bottom: 50px;
 }
 .info__part {
   padding-top: 100px;
@@ -170,4 +170,29 @@ body {
 }
 .info__table tr:first-child td {
   padding-top: 20px;
+}
+
+.track__inner {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.track {
+  background: url(/images/track-bg.jpg) center/cover no-repeat;
+}
+.track__title {
+  font-weight: 300;
+  font-size: 32px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.track__text {
+  max-width: 434px;
+}
+.track__img {
+  max-width: 742px;
+  margin: auto 0 0 auto;
 }
