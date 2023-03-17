@@ -196,3 +196,118 @@ body {
   max-width: 742px;
   margin: auto 0 0 auto;
 }
+
+.evo {
+  font-size: 14px;
+  margin-bottom: 100px;
+}
+
+.evo-black {
+  background-color: #363636;
+  padding: 100px 0 50px;
+  color: #FFFFFF;
+}
+.evo-black__inner {
+  position: relative;
+}
+.evo-black__inner::before {
+  content: "";
+  position: absolute;
+  background-image: url(/images/evo-deck-1.svg);
+  width: 185px;
+  height: 213px;
+  top: 217px;
+  left: -162px;
+}
+.evo-black__inner::after {
+  content: "";
+  position: absolute;
+  background-image: url(/images/evo-deck-2.svg);
+  width: 498px;
+  height: 572px;
+  top: 290px;
+  left: -50px;
+}
+.evo-black__info {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 20px;
+}
+.evo-black__title {
+  font-weight: 300;
+  font-size: 32px;
+  text-transform: uppercase;
+  flex-basis: 50%;
+}
+.evo-black__infobox {
+  flex-basis: 50%;
+}
+.evo-black__text:not(:last-child) {
+  margin-bottom: 30px;
+}
+.evo-black__img {
+  display: block;
+  margin: 200px auto 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.evo-black__desc-list {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+.evo-black__desc-list dd {
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.evo-while__inner {
+  padding-top: 125px;
+  position: relative;
+}
+.evo-while__inner::before {
+  content: "";
+  position: absolute;
+  background-image: url(/images/evo-deck-3.png);
+  width: 274px;
+  height: 257px;
+  top: -23px;
+  left: 363px;
+}
+.evo-while__inner::after {
+  content: "";
+  position: absolute;
+  background-image: url(/images/evo-deck-4.png);
+  width: 324px;
+  height: 311px;
+  top: 124px;
+  right: -21px;
+}
+.evo-while__text:first-child {
+  max-width: 285px;
+}
+.evo-while__text:nth-child(2) {
+  max-width: 437px;
+}
+.evo-while__text:nth-child(3) {
+  max-width: 590px;
+}
+.evo-while__text:not(:last-child) {
+  margin-bottom: 30px;
+}
+.evo-while__video {
+  margin-top: 100px;
+  background: url(/images/evo-video.png) center/cover no-repeat;
+  height: 263px;
+  max-width: 895px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.evo-while__video span {
+  display: block;
+  color: #fff;
+}
