@@ -311,3 +311,92 @@ body {
   display: block;
   color: #fff;
 }
+.blog {
+  margin-bottom: 100px;
+}
+.blog__title {
+  font-weight: 300;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #040404;
+  margin-bottom: 30px;
+}
+.blog__slider {
+  padding: 50px 0 100px;
+  position: relative;
+}
+.blog__item {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+.blog__item-img {
+  margin-bottom: 20px;
+}
+.blog__item-title {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #040404;
+  min-height: 45px;
+  margin-bottom: 10px;
+}
+.blog__item-text {
+  margin-bottom: 10px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.blog__item-link {
+  font-size: 12px;
+  color: #363636;
+}
+.blog__button {
+  top: 15px;
+  cursor: pointer;
+}
+
+.swiper-button-prev {
+  left: calc(50% - 42px);
+}
+
+.swiper-button-next {
+  left: calc(50% + 15px);
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.blog__quote {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.blog__quote-box {
+  flex-basis: 434px;
+}
+.blog__quote-img {
+  flex-basis: 434px;
+}
+
+.blockquote:not(:last-child) {
+  margin-bottom: 30px;
+}
+.blockquote__name {
+  font-size: 12px;
+  color: #040404;
+  margin-bottom: 10px;
+}
+.blockquote__name span {
+  display: block;
+  font-weight: 700;
+  color: #9F6B08;
+  margin-bottom: 3px;
+}
+.blockquote__text {
+  margin-top: 10px;
+  font-style: italic;
+}

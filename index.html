@@ -5,13 +5,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>lamborghini</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 		<link
 			href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,regular,italic,700&display=swap"
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="footer.css" />
 	</head>
 	<body>
 		<header class="header">
@@ -216,11 +216,106 @@
 				</div>
 			</section>
 			<section class="blog">
-				<h3 class="blog__title"></h3>
+				<div class="container">
+					<h3 class="blog__title">блог</h3>
+					<div class="blog__slider swiper">
+						<!-- Additional required wrapper -->
+						<div class="swiper-wrapper">
+							<!-- Slides -->
+							<div class="swiper-slide blog__item">
+								<img class="blog__item-img" src="images/blog-1.jpg" alt="blog" />
+								<h3 class="blog__item-title">НЕЛЬСОН ПИКЕ СТАЛ ПОБЕДИТЕЛЕМ ГРАНД-ФИНАЛА В ПОРТИМАНЕ</h3>
+								<p class="blog__item-text">
+									Нельсон Пике-младший из Ansa Motorsports обеспечил возвращение титула Lamborghini Super Trofeo Grand Finals в
+									Северную Америку впервые с 2017 года после победы и второе место в паре 50-минутных гонок на Autodromo
+									Nacionale do в Гранд-финале, добавив титул Am к своему успеху Pro-Am,
+								</p>
+								<a href="#" class="blog__item-link">читать подробнее...</a>
+							</div>
+							<div class="swiper-slide blog__item">
+								<img class="blog__item-img" src="images/blog-2.jpg" alt="blog" />
+								<h3 class="blog__item-title">ГРАНД ФИНАЛ. ДЕНЬ 1</h3>
+								<p class="blog__item-text">
+									Утренний дождь означал, что мокрая гонка была объявлена ​​до старта, и перед большинством экипажей стоял выбор:
+									использовать слики или мокрые шины. Большинство участников предпочли мокрую трассу, но поулист Спинелли начал
+									гонку на сликах и сразу же поплатился за это. Huracan № 61 опустился вниз, заняв всего 28-е место, поскольку
+									Бондуэль опередил бегунов Pro-Am Кароля Баша (Micanek Motorsport) и Льюиса Уильямсона (Oregon Team).Вскоре
+									Уильямсон опередил Баса, заняв первое место в Pro-Am и заняв второе место в общем зачете, но гонщик команды
+									Орегона не был доволен тем, что остался на этом месте, поскольку он отнимал у Бондюэля часть времени впереди.
+								</p>
+								<a href="#" class="blog__item-link">читать подробнее...</a>
+							</div>
+							<div class="swiper-slide blog__item">
+								<img class="blog__item-img" src="images/blog-1.jpg" alt="blog" />
+								<h3 class="blog__item-title">НЕЛЬСОН ПИКЕ СТАЛ ПОБЕДИТЕЛЕМ ГРАНД-ФИНАЛА В ПОРТИМАНЕ</h3>
+								<p class="blog__item-text">
+									Нельсон Пике-младший из Ansa Motorsports обеспечил возвращение титула Lamborghini Super Trofeo Grand Finals в
+									Северную Америку впервые с 2017 года после победы и второе место в паре 50-минутных гонок на Autodromo
+									Nacionale do Algarve в Портимане.Между тем, титул Pro-Am был подорван, поскольку Брайан Ортис и Себастьян
+									Карасо из Precision Performance Motorsports стали первым полностью пуэрто-риканским составом, выигравшим
+									Гранд-финал, сделав это драматично после того, как сравнялись по очкам с Брайсон Лью и Джон Дубетс.Анджей
+									Левандовски из VS Racing одержал свою вторую победу в Гранд-финале, добавив титул Am к своему успеху Pro-Am,
+								</p>
+								<a href="#" class="blog__item-link">читать подробнее...</a>
+							</div>
+							<div class="swiper-slide blog__item">
+								<img class="blog__item-img" src="images/blog-2.jpg" alt="blog" />
+								<h3 class="blog__item-title">ГРАНД ФИНАЛ. ДЕНЬ 1</h3>
+								<p class="blog__item-text">
+									Утренний дождь означал, что мокрая гонка была объявлена ​​до старта, и перед большинством экипажей стоял выбор:
+									использовать слики или мокрые шины. Большинство участников предпочли мокрую трассу, но поулист Спинелли начал
+									гонку на сликах и сразу же поплатился за это. Huracan № 61 опустился вниз, заняв всего 28-е место, поскольку
+									Бондуэль опередил бегунов Pro-Am Кароля Баша (Micanek Motorsport) и Льюиса Уильямсона (Oregon Team).Вскоре
+									Уильямсон опередил Баса, заняв первое место в Pro-Am и заняв второе место в общем зачете, но гонщик команды
+									Орегона не был доволен тем, что остался на этом месте, поскольку он отнимал у Бондюэля часть времени впереди.
+								</p>
+								<a href="#" class="blog__item-link">читать подробнее...</a>
+							</div>
+						</div>
+						<!-- If we need pagination -->
+						<!-- <div class="swiper-pagination"></div> -->
+
+						<!-- If we need navigation buttons -->
+						<div class="blog__button swiper-button-prev">
+							<img src="images/blog-prev.svg" alt="prev" />
+						</div>
+						<div class="blog__button swiper-button-next">
+							<img src="images/blog-next.svg" alt="next" />
+						</div>
+
+						<!-- If we need scrollbar -->
+						<!-- <div class="swiper-scrollbar"></div> -->
+					</div>
+
+					<div class="blog__quote">
+						<div class="blog__quote-box">
+							<blockquote class="blockquote">
+								<cite class="blockquote__name"> <span>Чемпион Am</span>Анджей Левандовски </cite>
+								<p class="blockquote__text">
+									«Я очень доволен титулом, моей второй победой в Am и четвертой в Super Trofeo, мне очень приятно делать это в
+									этом году, потому что уровень соревнований очень высок. Должен сказать, сегодня было довольно легко, так как я
+									все время контролировал ситуацию».
+								</p>
+							</blockquote>
+							<blockquote class="blockquote">
+								<cite class="blockquote__name"> <span>Обладатель кубка Lamborghini</span>Жерар ван дер Хорст </cite>
+								<p class="blockquote__text">
+									«Я очень доволен титулом, моей второй победой в Am и четвертой в Super Trofeo, мне очень приятно делать это в
+									этом году, потому что уровень соревнований очень высок. Должен Обладатель кубка Lamborghini добавил: «Здорово
+									выиграть титул, спустя четыре года после последнего, а за это время произошло так много всего. Из-за COVID-19,
+									а затем моей тяжелой аварии в Барселоне я не мог так много ездить в последние годы, поэтому я очень доволен
+									своим возвращением. Сегодня утром была тяжелая гонка, но я справился».
+								</p>
+							</blockquote>
+						</div>
+						<img class="blog__quote-img" src="images/blog.png" alt="quote" />
+					</div>
+				</div>
 			</section>
 		</main>
 		<a class="footer-adres" href="#footer">footer </a>
-		<footer id="footer" class="footer"></footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>

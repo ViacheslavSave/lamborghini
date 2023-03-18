@@ -398,3 +398,123 @@ body {
   &__link {}
 }
 //?--------------------------------------------- evo -- end --------------------------------------------------
+//!----- blog -----
+//?--------------------------------------------- blog ---------------------------------------------------------
+.blog {
+  margin-bottom: 100px;
+  &__title {
+    font-weight: 300;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #040404;
+    margin-bottom: 30px;
+  }
+  &__slider {
+    padding: 50px 0 100px;
+    position: relative;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    height: auto;
+  }
+  &__item-img {
+    margin-bottom: 20px;
+  }
+  &__item-title {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #040404;
+    min-height: 45px;
+    margin-bottom: 10px;
+  }
+  &__item-text {
+    margin-bottom: 10px;
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+  &__item-link {
+    font-size: 12px;
+    color: #363636;
+  }
+  &__button {
+    // position: absolute;
+    top: 15px;
+    // left: 50%;
+    cursor: pointer;
+  }
+}
+.swiper {}
+.swiper-wrapper {}
+.swiper-slide {}
+.swiper-button-prev {
+  // top: 0;
+  left: calc(50% - 42px);
+}
+// .swiper-button-right {
+//   left: calc(50% + 12px);
+// }
+.swiper-button-next {
+  // top: 0;
+  left: calc(50% + 15px);
+}
+.swiper-button-prev::after {
+  display: none;
+  // left: calc(50% + 12px);
+}
+.swiper-button-next::after {
+  display: none;
+  // left: calc(50% + 12px);
+}
+.blog {
+  &__quote {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  &__quote-box {
+    flex-basis: 434px;
+  }
+  &__quote-img {
+    flex-basis: 434px;
+  }
+}
+.container {}
+.blockquote {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  &__name {
+    font-size: 12px;
+    color: #040404;
+    margin-bottom: 10px;
+    span {
+      display: block;
+      font-weight: 700;
+      color: #9F6B08;
+      margin-bottom: 3px;
+    }
+  }
+  &__text {
+    margin-top: 10px;
+    font-style: italic;
+  }
+}
+//?--------------------------------------------- blog -- media ------------------------------------------------
+.blog {
+  &__title {}
+  &__slider {}
+  &__item {}
+  &__item-img {}
+  &__item-title {}
+  &__item-text {}
+  &__item-link {}
+}
+.container {}
+.swiper {}
+.swiper-wrapper {}
+.swiper-slide {}
+.swiper-button-prev {}
+.swiper-button-next {}
+//?--------------------------------------------- blog -- end --------------------------------------------------
