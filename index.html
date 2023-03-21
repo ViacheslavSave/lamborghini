@@ -13,6 +13,7 @@
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
+
 	<body>
 		<header class="header">
 			<div class="big-container">
@@ -29,6 +30,20 @@
 						<li class="menu-item"><a class="menu-link" href="#">Смотреть онлайн</a></li>
 						<li class="menu-item"><a class="menu-link" href="#">Контакты</a></li>
 					</ul>
+					<button class="menu-btn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<ul class="menu-mobile">
+						<li class="menu-item"><a href="#" class="menu-link">О гонке</a></li>
+						<li class="menu-item"><a href="#" class="menu-link">Трек</a></li>
+						<li class="menu-item"><a href="#" class="menu-link">Lamborghini Super trofeo</a></li>
+						<li class="menu-item"><a href="#" class="menu-link">Новости</a></li>
+						<li class="menu-item"><a class="menu-link" href="#">Купить билеты</a></li>
+						<li class="menu-item"><a class="menu-link" href="#">Смотреть онлайн</a></li>
+						<li class="menu-item"><a class="menu-link" href="#">Контакты</a></li>
+					</ul>
 				</nav>
 			</div>
 		</header>
@@ -39,13 +54,13 @@
 						<h1 class="promo__title">LAMBORGHINI SUPER TROFEO</h1>
 						<h2 class="promo__subtitle">Гранд-финал 2022 <span>3-6 ноября</span></h2>
 						<p class="promo__text">автодром Портимао,Португалия</p>
-						<a class="promo__arrow" href="#">
+						<a class="promo__arrow" href="#footer">
 							<img src="images/arrow.svg" alt="" />
 						</a>
 					</div>
 				</div>
 			</section>
-			<section class="info">
+			<!-- <section class="info">
 				<div class="container">
 					<div class="info__part info__part--first">
 						<h3 class="info__title">СУПЕР ТРОФЕО МИРОВОЙ ФИНАЛ</h3>
@@ -219,9 +234,7 @@
 				<div class="container">
 					<h3 class="blog__title">блог</h3>
 					<div class="blog__slider swiper">
-						<!-- Additional required wrapper -->
 						<div class="swiper-wrapper">
-							<!-- Slides -->
 							<div class="swiper-slide blog__item">
 								<img class="blog__item-img" src="images/blog-1.jpg" alt="blog" />
 								<h3 class="blog__item-title">НЕЛЬСОН ПИКЕ СТАЛ ПОБЕДИТЕЛЕМ ГРАНД-ФИНАЛА В ПОРТИМАНЕ</h3>
@@ -272,19 +285,13 @@
 								<a href="#" class="blog__item-link">читать подробнее...</a>
 							</div>
 						</div>
-						<!-- If we need pagination -->
-						<!-- <div class="swiper-pagination"></div> -->
 
-						<!-- If we need navigation buttons -->
 						<div class="blog__button swiper-button-prev">
 							<img src="images/blog-prev.svg" alt="prev" />
 						</div>
 						<div class="blog__button swiper-button-next">
 							<img src="images/blog-next.svg" alt="next" />
 						</div>
-
-						<!-- If we need scrollbar -->
-						<!-- <div class="swiper-scrollbar"></div> -->
 					</div>
 
 					<div class="blog__quote">
@@ -311,10 +318,68 @@
 						<img class="blog__quote-img" src="images/blog.png" alt="quote" />
 					</div>
 				</div>
-			</section>
+			</section> -->
 		</main>
-		<a class="footer-adres" href="#footer">footer </a>
-
+		<!-- <footer id="footer" class="footer">
+			<div class="container">
+				<h3 class="footer__title">контакты</h3>
+				<div class="footer__top">
+					<ul class="footer__info">
+						<li class="footer__info-item">
+							<dl>
+								<dt>общие</dt>
+								<dd><a href="tel:+351282405600">+(351) 282 405 600</a></dd>
+								<dd><a href="tel:+351282405697">+(351) 282 405 697</a></dd>
+								<dd><a href="mailto:info@autodromodoalgarve.com">info@autodromodoalgarve.com</a></dd>
+							</dl>
+						</li>
+						<li class="footer__info-item">
+							<dl>
+								<dt>билеты</dt>
+								<dd><a href="tel:+351282405600">+(351) 282 405 600</a></dd>
+								<dd><a href="mailto:tickets@autodromodoalgarve.com">tickets@autodromodoalgarve.com</a></dd>
+							</dl>
+						</li>
+						<li class="footer__info-item">
+							<ul class="social">
+								<li class="social__item">
+									<a href="" class="social__link"> <img class="social__icon" src="images/YOUTUBE.svg" alt="YOUTUBE" /></a>
+								</li>
+								<li class="social__item">
+									<a href="" class="social__link"> <img class="social__icon" src="images/INST.svg" alt="INST" /></a>
+								</li>
+								<li class="social__item">
+									<a href="" class="social__link"> <img class="social__icon" src="images/FACEBOOK.svg" alt="FACEBOOK" /></a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<div class="footer__address">
+						<p class="footer__address-title">АДРЕС</p>
+						<address class="footer__address-text">
+							Sitio do Escampadinho, Mexilhoeira Grande, 8500-148 Portimao, Portugal
+						</address>
+						<div id="map">
+							<script
+								src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+								defer
+							></script>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bootom">
+					<a class="footer__bootom-link" href="#">Design by Varvara Prokopchuk</a>
+					<a href="" class="footer__bootom-logo"
+						><img class="footer__bootom-img" src="images/footer-Logo.svg" alt="logo"
+					/></a>
+					<a class="footer__bootom-link" href="#">Политика конфиденциальности </a>
+				</div>
+			</div>
+		</footer> -->
+		<script
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+			defer
+		></script>
 		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>
