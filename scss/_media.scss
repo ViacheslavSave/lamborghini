@@ -1,0 +1,497 @@
+//?--------------------------------------------- header -- media ------------------------------------------------
+.header {}
+.nav {}
+.menu-list {}
+.menu-left {}
+.menu-item {}
+.menu-link {}
+.menu-mobile {}
+.menu-btn {}
+.logo {}
+.logo-img {}
+.menu-right {}
+//!------------------------  media -- 1100  ------------------------ 
+@media(max-width:1100px) {
+  .menu-list {
+    display: none;
+  }
+  .menu-mobile {
+    display: flex;
+    gap: 0 15px;
+  }
+  .logo-img {
+    width: 50px;
+  }
+  nav {
+    align-items: center;
+  }
+}
+//!------------------------  media -- 850  ------------------------ 
+@media(max-width:850px) {
+  .menu-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45px;
+    height: 25px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    span {
+      width: 100%;
+      height: 3px;
+      background-color: #FFFFFF;
+    }
+  }
+  .nav {
+    padding: 0;
+  }
+  .menu-mobile {
+    flex-direction: column;
+    position: absolute;
+    gap: 0;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #000;
+    height: 100vh;
+    z-index: 5;
+    text-align: center;
+    overflow-y: auto;
+    padding-top: 100px;
+    transition: left 0.5s;
+    //  line-height: 1px;
+    &.menu-mobile--open {
+      top: 0;
+      left: 0;
+      bottom: 0;
+      //  right: 0;
+    }
+  }
+  .menu-link {
+    color: #fff;
+    font-size: 4vw;
+    display: block;
+    padding: 10px 0;
+    line-height: 1;
+  }
+  .menu-btn,
+  .logo {
+    z-index: 10;
+  }
+}
+//!------------------------  media -- 450px  ------------------------
+@media(max-width:450px) {}
+.header {}
+.nav {}
+.menu-list {}
+.menu-left {}
+.menu-item {}
+.menu-link {
+  @media(max-width:450px) {
+    font-size: 5vw;
+  }
+}
+.menu-mobile {}
+.menu-btn {}
+.logo {}
+.logo-img {}
+.menu-right {}
+//?--------------------------------------------- header -- end --------------------------------------------------
+//?--------------------------------------------- promo -- media ------------------------------------------------
+.main {}
+.promo {
+  &__inner {}
+  &__title {}
+  &__subtitle {}
+  &__text {}
+}
+//!------------------------  media -- 1100  ------------------------ 
+@media(max-width:1100px) {
+  .promo {
+    background-position: left center;
+    // background-position: calc(-150px + 150 * ((100vw - 320px) / (1100 - 320))) center;
+    // 1100
+    // 950
+    // 850
+    // 650
+    // 450
+    &__inner {}
+    &__title {
+      padding-left: 0;
+      font-size: 64px;
+    }
+    &__subtitle {
+      font-size: 42px;
+      // max-width: 275px;    
+      span {
+        font-size: 32px;
+      }
+    }
+    &__text {}
+  }
+}
+//!------------------------  media -- 850  ------------------------ 
+@media(max-width:850px) {
+  .promo {
+    // background-position:  center;
+    &__inner {}
+    &__title {
+      font-size: calc(30px + 34 * ((100vw - 320px) / (850 - 320)));
+    }
+    &__subtitle {
+      font-size: calc(26px + 16 * ((100vw - 320px) / (850 - 320)));
+      span {
+        font-size: calc(22px + 10 * ((100vw - 320px) / (850 - 320)));
+      }
+    }
+  }
+}
+.promo {
+  &__text {
+    @media(max-width:450px) {
+      font-size: calc(13px + 3 * ((100vw - 320px) / (450 - 320)));
+    }
+  }
+}
+//?--------------------------------------------- promo -- end --------------------------------------------------
+//?--------------------------------------------- info -- media ------------------------------------------------
+.info {
+  &__part {}
+  &__title {}
+  &__part-textbox {}
+  &__text {}
+  &__part-img {}
+  &__content {}
+  &__table {}
+  // 1100
+  // 850
+  // 450
+}
+//!------------------------  media -- 850px  ------------------------
+@media(max-width:850px) {
+  .info {
+    &__part-textbox {
+      flex-wrap: wrap;
+    }
+    &__part {
+      flex-wrap: wrap;
+      padding-top: 50px;
+    }
+    &__part--second {
+      gap: 50px;
+      //  text-align: center;
+      .info__part-img {
+        // align-self: center;
+        //  text-align: center;
+        // display: inline;
+        // align-items: center;
+        // display: block;
+        margin: 0 auto;
+        // width: 80%;
+        width: calc(290px + 346 * ((100vw - 320px) / (850 - 320)));
+      }
+    }
+    &__title {}
+    &__text {
+      flex-basis: 100%;
+    }
+    &__part-img {}
+    &__content {
+      flex-basis: 100%;
+    }
+    &__table {
+      flex-basis: 100%;
+    }
+    &__part--second &__text {
+      max-width: 100%;
+    }
+    &__part--third &__text {
+      max-width: 100%;
+    }
+  }
+}
+//!------------------------  media -- 450px  ------------------------
+@media(max-width:450px) {
+  .info {
+    &__part {}
+    &__part--second {
+      gap: 30px;
+      .info__part-img {
+        //  width: 100%;
+      }
+    }
+    &__title {}
+    &__part-textbox {}
+    &__text {}
+    &__part-img {}
+    &__content {}
+    &__table {
+      td {
+        padding-right: 10px;
+      }
+    }
+    // 1100
+    // 850
+    // 450
+  }
+}
+//?--------------------------------------------- info -- end --------------------------------------------------
+//?--------------------------------------------- track -- media ------------------------------------------------
+.track {
+  &__inner {}
+  &__title {}
+  &__text {}
+  &__img {}
+}
+// 1100
+// 850
+// 450
+//!------------------------  media -- 850px  ------------------------
+@media(max-width:850px) {
+  .track {
+    &__inner {
+      //  display: block;
+      // min-height: 100px;
+      height: auto;
+    }
+    &__title {}
+    &__text {
+      margin-bottom: 30px;
+    }
+    &__img {
+      margin: 0 0 0 auto;
+      // margin: 0;
+      //  display: block;
+    }
+  }
+}
+//?--------------------------------------------- track -- end --------------------------------------------------
+//?--------------------------------------------- evo -- media ------------------------------------------------
+.evo {}
+.evo-black {
+  &__inner {}
+  &__info {}
+  &__title {}
+  &__infobox {}
+  &__text {}
+  &__img {}
+}
+.container {}
+.evo-black--desc-list {}
+.evo-while {
+  &__inner {}
+  &__text {}
+  &__video {}
+  &__link {}
+}
+// 1100
+// 950
+// 850
+// 650
+// 450
+//!------------------------  media -- 850px  ------------------------
+@media(max-width:950px) {
+  .evo-black__desc-list {
+    // display: flex;
+    // justify-content: space-between;
+    // position: relative;
+    // z-index: 1;
+    flex-direction: column;
+    text-align: center;
+    dd {
+      // text-transform: uppercase;
+      // margin-bottom: 4px;
+    }
+    dt {
+      margin-bottom: 10px;
+    }
+  }
+  .evo-while {
+    &__inner {
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+//!------------------------  media -- 650px  ------------------------
+@media(max-width:650px) {
+  .evo {
+    padding-bottom: 50px;
+  }
+  .evo-black {
+    padding: 70px 0 30px;
+    &__inner {
+      &::after {
+        display: none;
+      }
+    }
+    &__info {
+      flex-wrap: wrap;
+    }
+    &__title {
+      flex-basis: 100%;
+    }
+    &__infobox {
+      flex-basis: 100%;
+    }
+    &__text {}
+    &__img {
+      margin: 130px auto 50px;
+    }
+  }
+  .container {}
+  .evo-black--desc-list {}
+  .evo-while {
+    &__inner {
+      padding-top: 70px;
+      &::before {
+        display: none;
+      }
+    }
+    &__text {}
+    &__video {
+      margin-top: 70px;
+    }
+    &__link {}
+  }
+}
+//?--------------------------------------------- evo -- end --------------------------------------------------
+//?--------------------------------------------- blog -- media ------------------------------------------------
+.blog {
+  &__title {}
+  &__slider {}
+  &__item {}
+  &__item-img {}
+  &__item-title {}
+  &__item-text {}
+  &__item-link {}
+}
+.blog {
+  &__quote {}
+  &__quote-box {}
+  &__quote-img {}
+}
+.blockquote {
+  &__name {}
+  &__text {}
+}
+.swiper {}
+.swiper-wrapper {}
+.swiper-slide {}
+.swiper-button-prev {}
+.swiper-button-next {}
+// 1100
+// 950
+// 850
+// 650
+// 450
+//!------------------------  media -- 950px  ------------------------
+@media(max-width:950px) {
+  .blog {
+    padding-bottom: 50px;
+    &__title {}
+    &__slider {
+      padding: 50px 0 50px;
+    }
+    &__item {}
+    &__item-img {}
+    &__item-title {}
+    &__item-text {}
+    &__item-link {}
+  }
+  .blog {
+    &__quote {
+      flex-wrap: wrap;
+      // flex-direction: column;
+    }
+    &__quote-box {
+      flex-basis: auto;
+    }
+    &__quote-img {
+      flex-basis: 80%;
+      order: -1;
+      // width: 80%;
+      // display: block;
+      margin: 50px auto 0;
+    }
+    // text-align: center;
+  }
+  .blockquote {
+    &__name {}
+    &__text {}
+  }
+}
+//?--------------------------------------------- blog -- end --------------------------------------------------
+//?--------------------------------------------- footer -- media ------------------------------------------------
+.footer {
+  &__title {}
+  &__top {
+    // display: block;
+  }
+  &__info {}
+  &__address {}
+  &__address-title {}
+  &__address-text {}
+  &__bootom {}
+  &__bootom-link {}
+  &__bootom-logo {}
+  &__bootom-img {}
+}
+.social {
+  &__item {}
+  &__link {}
+  &__icon {}
+}
+// 1100
+// 950
+// 850
+// 750
+// 650
+// 450
+//!------------------------  media -- 750px  ------------------------
+@media(max-width:750px) {
+  .footer {
+    padding: 60px 0 40px;
+    &__title {}
+    &__top {
+      display: block;
+      margin-bottom: 40px;
+    }
+    &__info {
+      padding-bottom: 50px;
+    }
+    &__address {}
+    &__address-title {}
+    &__address-text {}
+    &__bootom {}
+    &__bootom-link {}
+    &__bootom-logo {}
+    &__bootom-img {}
+  }
+}
+//!------------------------  media -- 650px  ------------------------
+@media(max-width:650px) {
+  .footer {
+    &__title {}
+    &__top {}
+    &__info {}
+    &__address {}
+    &__address-title {}
+    &__address-text {}
+    &__bootom {
+      flex-direction: column;
+
+    }
+    &__bootom-link {}
+    &__bootom-logo {}
+    &__bootom-img {
+      transform: translateY(7px);
+    
+    }
+  }
+}
+//?--------------------------------------------- footer -- end --------------------------------------------------

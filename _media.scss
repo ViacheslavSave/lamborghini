@@ -1,0 +1,91 @@
+//?--------------------------------------------- header -- media ------------------------------------------------
+.header {}
+.nav {}
+.menu-list {}
+.menu-left {}
+.menu-item {}
+.menu-link {}
+.menu-mobile {}
+.logo {}
+.logo-img {}
+.menu-right {}
+@media(max-width:1100px) {
+  .menu-list {
+    display: none;
+  }
+  .menu-mobile {
+    display: flex;
+    gap: 15px;
+  }
+  .logo-img {
+    width: 50px;
+  }
+  nav {
+    align-items: center;
+  }
+}
+@media(max-width:850px) {
+  .menu-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45px;
+    height: 25px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    span{
+      width: 100%;
+      height: 3px;
+      background-color: #FFFFFF;
+    }
+  }
+}
+//?--------------------------------------------- header -- end --------------------------------------------------
+//?--------------------------------------------- promo -- media ------------------------------------------------
+.main {}
+.promo {
+  &__inner {}
+  &__title {}
+  &__subtitle {}
+  &__text {}
+}
+@media(max-width:1100px) {
+  .promo {
+    // background-position: left center;
+    background-position: calc(-150px + 150 * ((100vw - 320px) / (1100 - 320))) center;
+    &__inner {}
+    &__title {
+      padding-left: 0;
+      font-size: 64px;
+    }
+    &__subtitle {
+      font-size: 42px;
+      // max-width: 275px;    
+      span {
+        font-size: 32px;
+      }
+    }
+    &__text {}
+  }
+}
+@media(max-width:850px) {
+  .promo {
+    &__inner {}
+    &__title {}
+    &__subtitle {}
+    &__text {}
+  }
+}
+//?--------------------------------------------- promo -- end --------------------------------------------------
+//?--------------------------------------------- info -- media ------------------------------------------------
+.info {
+  &__part {}
+  &__title {}
+  &__part-textbox {}
+  &__text {}
+  &__part-img {}
+  &__content {}
+  &__table {}
+}
+//?--------------------------------------------- info -- end --------------------------------------------------

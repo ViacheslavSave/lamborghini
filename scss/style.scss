@@ -31,6 +31,9 @@ body {
   color: #040404;
   font-family: 'Roboto Condensed', sans-serif;
 }
+img {
+  max-width: 100%;
+}
 //!----- header -----
 //?--------------------------------------------- header ---------------------------------------------------------
 .header {
@@ -63,49 +66,6 @@ body {
 .logo {}
 .logo-img {}
 .menu-right {}
-//?--------------------------------------------- header -- media ------------------------------------------------
-.header {}
-.nav {}
-.menu-list {}
-.menu-left {}
-.menu-item {}
-.menu-link {}
-.menu-mobile {}
-.logo {}
-.logo-img {}
-.menu-right {}
-@media(max-width:1100px) {
-  .menu-list {
-    display: none;
-  }
-  .menu-mobile {
-    display: flex;
-    gap: 15px;
-  }
-  .logo-img {
-    width: 50px;
-  }
-  nav {
-    align-items: center;
-  }
-}
-@media(max-width:850px) {
-  .menu-btn {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 45px;
-    height: 25px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    span{
-      width: 100%;
-      height: 3px;
-      background-color: #FFFFFF;
-    }
-  }
-}
 //?--------------------------------------------- header -- end --------------------------------------------------
 //!----- promo -----
 //?--------------------------------------------- promo ---------------------------------------------------------
@@ -164,41 +124,6 @@ body {
     // margin-bottom: 30px;
   }
 }
-//?--------------------------------------------- promo -- media ------------------------------------------------
-.main {}
-.promo {
-  &__inner {}
-  &__title {}
-  &__subtitle {}
-  &__text {}
-}
-@media(max-width:1100px) {
-  .promo {
-    // background-position: left center;
-    background-position: calc(-150px + 150 * ((100vw - 320px) / (1100 - 320))) center;
-    &__inner {}
-    &__title {
-      padding-left: 0;
-      font-size: 64px;
-    }
-    &__subtitle {
-      font-size: 42px;
-      // max-width: 275px;    
-      span {
-        font-size: 32px;
-      }
-    }
-    &__text {}
-  }
-}
-@media(max-width:850px) {
-  .promo {
-    &__inner {}
-    &__title {}
-    &__subtitle {}
-    &__text {}
-  }
-}
 //?--------------------------------------------- promo -- end --------------------------------------------------
 //!----- info -----
 //?--------------------------------------------- info ---------------------------------------------------------
@@ -229,13 +154,23 @@ body {
     flex-basis: 440px;
     // width: 50%;
   }
-  &__part-img {
-    // width: 100%;
+  &__part--first &__part-img {
+    width: 100%;
     object-fit: cover;
     // text-align: center;
   }
+  &__part--second &__part-img {
+    // width: 100%;
+    object-fit: cover;
+    // flex-basis: 433px;
+    // height: calc(333px / 433px * 100%);
+    // width: 433px;
+    // flex-grow: 0;
+    // flex-shrink: 0;
+    // text-align: center;
+  }
   &__content {
-    flex-basis: 415px;
+    flex-basis: 363px;
   }
   &__part--third &__text {
     max-width: 377px;
@@ -268,6 +203,7 @@ body {
     // }
     td {
       padding-bottom: 20px;
+      padding-right: 20px;
     }
     tr:first-child {
       td {
@@ -275,16 +211,6 @@ body {
       }
     }
   }
-}
-//?--------------------------------------------- info -- media ------------------------------------------------
-.info {
-  &__part {}
-  &__title {}
-  &__part-textbox {}
-  &__text {}
-  &__part-img {}
-  &__content {}
-  &__table {}
 }
 //?--------------------------------------------- info -- end --------------------------------------------------
 //!----- track -----
@@ -308,7 +234,7 @@ body {
     max-width: 434px;
   }
   &__img {
-    max-width: 742px;
+    // max-width: 742px;
     margin: auto 0 0 auto;
   }
 }
@@ -322,9 +248,10 @@ body {
 //?--------------------------------------------- track -- end --------------------------------------------------
 //!----- evo -----
 //?--------------------------------------------- evo ---------------------------------------------------------
+//==
 .evo {
   font-size: 14px;
-  margin-bottom: 100px;
+  padding-bottom: 100px;
 }
 .evo-black {
   background-color: #363636;
@@ -354,7 +281,7 @@ body {
   &__info {
     display: flex;
     justify-content: space-between;
-    gap: 0 20px;
+    gap:30px 20px;
   }
   &__title {
     font-weight: 300;
@@ -466,7 +393,7 @@ body {
 //!----- blog -----
 //?--------------------------------------------- blog ---------------------------------------------------------
 .blog {
-  margin-bottom: 100px;
+  padding-bottom: 100px;
   &__title {
     font-weight: 300;
     font-size: 32px;
@@ -476,7 +403,7 @@ body {
   }
   &__slider {
     padding: 50px 0 100px;
-    position: relative;
+    // position: relative;
   }
   &__item {
     display: flex;
@@ -566,22 +493,6 @@ body {
     font-style: italic;
   }
 }
-//?--------------------------------------------- blog -- media ------------------------------------------------
-.blog {
-  &__title {}
-  &__slider {}
-  &__item {}
-  &__item-img {}
-  &__item-title {}
-  &__item-text {}
-  &__item-link {}
-}
-.container {}
-.swiper {}
-.swiper-wrapper {}
-.swiper-slide {}
-.swiper-button-prev {}
-.swiper-button-next {}
 //?--------------------------------------------- blog -- end --------------------------------------------------
 //!----- footer -----
 //?--------------------------------------------- footer ---------------------------------------------------------
@@ -637,6 +548,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
   }
   &__bootom-link {}
   &__bootom-logo {}
@@ -649,26 +561,8 @@ body {
   &__item {}
   &__link {}
   &__icon {
-    display: block;
+    // display: block;
   }
 }
-//?--------------------------------------------- footer -- media ------------------------------------------------
-.footer {
-  &__title {}
-  &__top {}
-  &__info {}
-  &__address {}
-  &__address-title {}
-  &__address-text {}
-  &__bootom {}
-  &__bootom-link {}
-  &__bootom-logo {}
-  &__bootom-img {}
-}
-.container {}
-.social {
-  &__item {}
-  &__link {}
-  &__icon {}
-}
 //?--------------------------------------------- footer -- end --------------------------------------------------
+@import "_media.scss";
